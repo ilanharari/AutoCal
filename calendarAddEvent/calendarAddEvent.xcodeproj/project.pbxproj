@@ -7,49 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */; };
-		CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */; };
-		CBE6832F243BE3EC0051ED79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832E243BE3EC0051ED79 /* ViewController.swift */; };
-		CBE68332243BE3EC0051ED79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE68330243BE3EC0051ED79 /* Main.storyboard */; };
-		CBE68334243BE3EE0051ED79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE68333243BE3EE0051ED79 /* Assets.xcassets */; };
-		CBE68337243BE3EE0051ED79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE68335243BE3EE0051ED79 /* LaunchScreen.storyboard */; };
-		CBE68342243BE3EE0051ED79 /* AutoCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE68341243BE3EE0051ED79 /* AutoCalTests.swift */; };
+		CB7672A424429F5600E550E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672A324429F5600E550E5 /* AppDelegate.swift */; };
+		CB7672A624429F5600E550E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672A524429F5600E550E5 /* SceneDelegate.swift */; };
+		CB7672A824429F5600E550E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672A724429F5600E550E5 /* ViewController.swift */; };
+		CB7672AB24429F5600E550E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7672A924429F5600E550E5 /* Main.storyboard */; };
+		CB7672AD24429F5D00E550E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7672AC24429F5D00E550E5 /* Assets.xcassets */; };
+		CB7672B024429F5D00E550E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7672AE24429F5D00E550E5 /* LaunchScreen.storyboard */; };
+		CB7672BB24429F5D00E550E5 /* calendarAddEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672BA24429F5D00E550E5 /* calendarAddEventTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CBE6833E243BE3EE0051ED79 /* PBXContainerItemProxy */ = {
+		CB7672B724429F5D00E550E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CBE6831F243BE3EC0051ED79 /* Project object */;
+			containerPortal = CB76729824429F5600E550E5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CBE68326243BE3EC0051ED79;
-			remoteInfo = AutoCal;
+			remoteGlobalIDString = CB76729F24429F5600E550E5;
+			remoteInfo = calendarAddEvent;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CBA6E2AF243FD6F1008B0C1C /* EventKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EventKitPlayground.playground; path = ../../EventKitPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		CBE68327243BE3EC0051ED79 /* AutoCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBE6832E243BE3EC0051ED79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBE68331243BE3EC0051ED79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CBE68333243BE3EE0051ED79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBE68336243BE3EE0051ED79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBE68338243BE3EE0051ED79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBE6833D243BE3EE0051ED79 /* AutoCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBE68341243BE3EE0051ED79 /* AutoCalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCalTests.swift; sourceTree = "<group>"; };
-		CBE68343243BE3EE0051ED79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7672A024429F5600E550E5 /* calendarAddEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendarAddEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7672A324429F5600E550E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB7672A524429F5600E550E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB7672A724429F5600E550E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB7672AA24429F5600E550E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB7672AC24429F5D00E550E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB7672AF24429F5D00E550E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB7672B124429F5D00E550E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7672B624429F5D00E550E5 /* calendarAddEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calendarAddEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7672BA24429F5D00E550E5 /* calendarAddEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarAddEventTests.swift; sourceTree = "<group>"; };
+		CB7672BC24429F5D00E550E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CBE68324243BE3EC0051ED79 /* Frameworks */ = {
+		CB76729D24429F5600E550E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBE6833A243BE3EE0051ED79 /* Frameworks */ = {
+		CB7672B324429F5D00E550E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,130 +58,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBA6E2B0243FDB57008B0C1C /* Model */ = {
+		CB76729724429F5600E550E5 = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CBA6E2B1243FDB5E008B0C1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CBA6E2B2243FDB63008B0C1C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CBE6832E243BE3EC0051ED79 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CBE6831E243BE3EC0051ED79 = {
-			isa = PBXGroup;
-			children = (
-				CBE68329243BE3EC0051ED79 /* AutoCal */,
-				CBE68340243BE3EE0051ED79 /* AutoCalTests */,
-				CBE68328243BE3EC0051ED79 /* Products */,
+				CB7672A224429F5600E550E5 /* calendarAddEvent */,
+				CB7672B924429F5D00E550E5 /* calendarAddEventTests */,
+				CB7672A124429F5600E550E5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CBE68328243BE3EC0051ED79 /* Products */ = {
+		CB7672A124429F5600E550E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBE68327243BE3EC0051ED79 /* AutoCal.app */,
-				CBE6833D243BE3EE0051ED79 /* AutoCalTests.xctest */,
+				CB7672A024429F5600E550E5 /* calendarAddEvent.app */,
+				CB7672B624429F5D00E550E5 /* calendarAddEventTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBE68329243BE3EC0051ED79 /* AutoCal */ = {
+		CB7672A224429F5600E550E5 /* calendarAddEvent */ = {
 			isa = PBXGroup;
 			children = (
-				CBA6E2B0243FDB57008B0C1C /* Model */,
-				CBA6E2B1243FDB5E008B0C1C /* View */,
-				CBA6E2B2243FDB63008B0C1C /* Controller */,
-				CBA6E2AF243FD6F1008B0C1C /* EventKitPlayground.playground */,
-				CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */,
-				CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */,
-				CBE68330243BE3EC0051ED79 /* Main.storyboard */,
-				CBE68333243BE3EE0051ED79 /* Assets.xcassets */,
-				CBE68335243BE3EE0051ED79 /* LaunchScreen.storyboard */,
-				CBE68338243BE3EE0051ED79 /* Info.plist */,
+				CB7672A324429F5600E550E5 /* AppDelegate.swift */,
+				CB7672A524429F5600E550E5 /* SceneDelegate.swift */,
+				CB7672A724429F5600E550E5 /* ViewController.swift */,
+				CB7672A924429F5600E550E5 /* Main.storyboard */,
+				CB7672AC24429F5D00E550E5 /* Assets.xcassets */,
+				CB7672AE24429F5D00E550E5 /* LaunchScreen.storyboard */,
+				CB7672B124429F5D00E550E5 /* Info.plist */,
 			);
-			path = AutoCal;
+			path = calendarAddEvent;
 			sourceTree = "<group>";
 		};
-		CBE68340243BE3EE0051ED79 /* AutoCalTests */ = {
+		CB7672B924429F5D00E550E5 /* calendarAddEventTests */ = {
 			isa = PBXGroup;
 			children = (
-				CBE68341243BE3EE0051ED79 /* AutoCalTests.swift */,
-				CBE68343243BE3EE0051ED79 /* Info.plist */,
+				CB7672BA24429F5D00E550E5 /* calendarAddEventTests.swift */,
+				CB7672BC24429F5D00E550E5 /* Info.plist */,
 			);
-			path = AutoCalTests;
+			path = calendarAddEventTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBE68326243BE3EC0051ED79 /* AutoCal */ = {
+		CB76729F24429F5600E550E5 /* calendarAddEvent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBE68346243BE3EE0051ED79 /* Build configuration list for PBXNativeTarget "AutoCal" */;
+			buildConfigurationList = CB7672BF24429F5D00E550E5 /* Build configuration list for PBXNativeTarget "calendarAddEvent" */;
 			buildPhases = (
-				CBE68323243BE3EC0051ED79 /* Sources */,
-				CBE68324243BE3EC0051ED79 /* Frameworks */,
-				CBE68325243BE3EC0051ED79 /* Resources */,
+				CB76729C24429F5600E550E5 /* Sources */,
+				CB76729D24429F5600E550E5 /* Frameworks */,
+				CB76729E24429F5600E550E5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AutoCal;
-			productName = AutoCal;
-			productReference = CBE68327243BE3EC0051ED79 /* AutoCal.app */;
+			name = calendarAddEvent;
+			productName = calendarAddEvent;
+			productReference = CB7672A024429F5600E550E5 /* calendarAddEvent.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBE6833C243BE3EE0051ED79 /* AutoCalTests */ = {
+		CB7672B524429F5D00E550E5 /* calendarAddEventTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBE68349243BE3EE0051ED79 /* Build configuration list for PBXNativeTarget "AutoCalTests" */;
+			buildConfigurationList = CB7672C224429F5D00E550E5 /* Build configuration list for PBXNativeTarget "calendarAddEventTests" */;
 			buildPhases = (
-				CBE68339243BE3EE0051ED79 /* Sources */,
-				CBE6833A243BE3EE0051ED79 /* Frameworks */,
-				CBE6833B243BE3EE0051ED79 /* Resources */,
+				CB7672B224429F5D00E550E5 /* Sources */,
+				CB7672B324429F5D00E550E5 /* Frameworks */,
+				CB7672B424429F5D00E550E5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CBE6833F243BE3EE0051ED79 /* PBXTargetDependency */,
+				CB7672B824429F5D00E550E5 /* PBXTargetDependency */,
 			);
-			name = AutoCalTests;
-			productName = AutoCalTests;
-			productReference = CBE6833D243BE3EE0051ED79 /* AutoCalTests.xctest */;
+			name = calendarAddEventTests;
+			productName = calendarAddEventTests;
+			productReference = CB7672B624429F5D00E550E5 /* calendarAddEventTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CBE6831F243BE3EC0051ED79 /* Project object */ = {
+		CB76729824429F5600E550E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ilan Harari";
 				TargetAttributes = {
-					CBE68326243BE3EC0051ED79 = {
+					CB76729F24429F5600E550E5 = {
 						CreatedOnToolsVersion = 11.4;
 					};
-					CBE6833C243BE3EE0051ED79 = {
+					CB7672B524429F5D00E550E5 = {
 						CreatedOnToolsVersion = 11.4;
-						TestTargetID = CBE68326243BE3EC0051ED79;
+						TestTargetID = CB76729F24429F5600E550E5;
 					};
 				};
 			};
-			buildConfigurationList = CBE68322243BE3EC0051ED79 /* Build configuration list for PBXProject "AutoCal" */;
+			buildConfigurationList = CB76729B24429F5600E550E5 /* Build configuration list for PBXProject "calendarAddEvent" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,29 +164,29 @@
 				en,
 				Base,
 			);
-			mainGroup = CBE6831E243BE3EC0051ED79;
-			productRefGroup = CBE68328243BE3EC0051ED79 /* Products */;
+			mainGroup = CB76729724429F5600E550E5;
+			productRefGroup = CB7672A124429F5600E550E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBE68326243BE3EC0051ED79 /* AutoCal */,
-				CBE6833C243BE3EE0051ED79 /* AutoCalTests */,
+				CB76729F24429F5600E550E5 /* calendarAddEvent */,
+				CB7672B524429F5D00E550E5 /* calendarAddEventTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CBE68325243BE3EC0051ED79 /* Resources */ = {
+		CB76729E24429F5600E550E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE68337243BE3EE0051ED79 /* LaunchScreen.storyboard in Resources */,
-				CBE68334243BE3EE0051ED79 /* Assets.xcassets in Resources */,
-				CBE68332243BE3EC0051ED79 /* Main.storyboard in Resources */,
+				CB7672B024429F5D00E550E5 /* LaunchScreen.storyboard in Resources */,
+				CB7672AD24429F5D00E550E5 /* Assets.xcassets in Resources */,
+				CB7672AB24429F5600E550E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBE6833B243BE3EE0051ED79 /* Resources */ = {
+		CB7672B424429F5D00E550E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,47 +196,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CBE68323243BE3EC0051ED79 /* Sources */ = {
+		CB76729C24429F5600E550E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE6832F243BE3EC0051ED79 /* ViewController.swift in Sources */,
-				CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */,
-				CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */,
+				CB7672A824429F5600E550E5 /* ViewController.swift in Sources */,
+				CB7672A424429F5600E550E5 /* AppDelegate.swift in Sources */,
+				CB7672A624429F5600E550E5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBE68339243BE3EE0051ED79 /* Sources */ = {
+		CB7672B224429F5D00E550E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE68342243BE3EE0051ED79 /* AutoCalTests.swift in Sources */,
+				CB7672BB24429F5D00E550E5 /* calendarAddEventTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CBE6833F243BE3EE0051ED79 /* PBXTargetDependency */ = {
+		CB7672B824429F5D00E550E5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBE68326243BE3EC0051ED79 /* AutoCal */;
-			targetProxy = CBE6833E243BE3EE0051ED79 /* PBXContainerItemProxy */;
+			target = CB76729F24429F5600E550E5 /* calendarAddEvent */;
+			targetProxy = CB7672B724429F5D00E550E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBE68330243BE3EC0051ED79 /* Main.storyboard */ = {
+		CB7672A924429F5600E550E5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBE68331243BE3EC0051ED79 /* Base */,
+				CB7672AA24429F5600E550E5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CBE68335243BE3EE0051ED79 /* LaunchScreen.storyboard */ = {
+		CB7672AE24429F5D00E550E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBE68336243BE3EE0051ED79 /* Base */,
+				CB7672AF24429F5D00E550E5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -270,7 +244,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CBE68344243BE3EE0051ED79 /* Debug */ = {
+		CB7672BD24429F5D00E550E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -330,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		CBE68345243BE3EE0051ED79 /* Release */ = {
+		CB7672BE24429F5D00E550E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,113 +358,113 @@
 			};
 			name = Release;
 		};
-		CBE68347243BE3EE0051ED79 /* Debug */ = {
+		CB7672C024429F5D00E550E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AutoCal/Info.plist;
+				INFOPLIST_FILE = calendarAddEvent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ilan.AutoCal;
+				PRODUCT_BUNDLE_IDENTIFIER = ilan.calendarAddEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CBE68348243BE3EE0051ED79 /* Release */ = {
+		CB7672C124429F5D00E550E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AutoCal/Info.plist;
+				INFOPLIST_FILE = calendarAddEvent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ilan.AutoCal;
+				PRODUCT_BUNDLE_IDENTIFIER = ilan.calendarAddEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		CBE6834A243BE3EE0051ED79 /* Debug */ = {
+		CB7672C324429F5D00E550E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AutoCalTests/Info.plist;
+				INFOPLIST_FILE = calendarAddEventTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ilan.AutoCalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ilan.calendarAddEventTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCal.app/AutoCal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calendarAddEvent.app/calendarAddEvent";
 			};
 			name = Debug;
 		};
-		CBE6834B243BE3EE0051ED79 /* Release */ = {
+		CB7672C424429F5D00E550E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AutoCalTests/Info.plist;
+				INFOPLIST_FILE = calendarAddEventTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ilan.AutoCalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ilan.calendarAddEventTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCal.app/AutoCal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calendarAddEvent.app/calendarAddEvent";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBE68322243BE3EC0051ED79 /* Build configuration list for PBXProject "AutoCal" */ = {
+		CB76729B24429F5600E550E5 /* Build configuration list for PBXProject "calendarAddEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBE68344243BE3EE0051ED79 /* Debug */,
-				CBE68345243BE3EE0051ED79 /* Release */,
+				CB7672BD24429F5D00E550E5 /* Debug */,
+				CB7672BE24429F5D00E550E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBE68346243BE3EE0051ED79 /* Build configuration list for PBXNativeTarget "AutoCal" */ = {
+		CB7672BF24429F5D00E550E5 /* Build configuration list for PBXNativeTarget "calendarAddEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBE68347243BE3EE0051ED79 /* Debug */,
-				CBE68348243BE3EE0051ED79 /* Release */,
+				CB7672C024429F5D00E550E5 /* Debug */,
+				CB7672C124429F5D00E550E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBE68349243BE3EE0051ED79 /* Build configuration list for PBXNativeTarget "AutoCalTests" */ = {
+		CB7672C224429F5D00E550E5 /* Build configuration list for PBXNativeTarget "calendarAddEventTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBE6834A243BE3EE0051ED79 /* Debug */,
-				CBE6834B243BE3EE0051ED79 /* Release */,
+				CB7672C324429F5D00E550E5 /* Debug */,
+				CB7672C424429F5D00E550E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CBE6831F243BE3EC0051ED79 /* Project object */;
+	rootObject = CB76729824429F5600E550E5 /* Project object */;
 }
