@@ -55,6 +55,10 @@
 	</array>
 	<key>NSCalendarsUsageDescription</key>
 	<string>This application needs to access the calendar.</string>
+	<key>RequestsOpenAccess</key>
+	<string>Yes</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>We need the reminders ok</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

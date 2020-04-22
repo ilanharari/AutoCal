@@ -16,6 +16,10 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>So we can make your calendar events!</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>So we can pull your reminders in!</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let calendars = store.calendars(for: .event) // creates an array of calendars initialized to the calendars on the device. If EKEntityType = .reminder, it will initialize this array to the groups of Reminders on the device.
 
         
-//        2. Check if the previously created calendar "ioscreator" exists
+//        2. Check if the previously created calendar "Calendar" exists
         for calendar in calendars {
             if calendar.title == "Calendar" {
          
@@ -78,7 +78,6 @@ class ViewController: UIViewController {
                     {[weak self] (granted: Bool, error: Error?) -> Void in
                         if granted {
                             self!.insertEvent(store: eventStore)
-                            
                         }
             })
         
@@ -91,7 +90,8 @@ class ViewController: UIViewController {
         @unknown default:
             print("case default")
             } //end switch
-        
+        //this is where switching screen goes
+        navigationController?.pushViewController(RemindersViewController(), animated: true)
         
         
         

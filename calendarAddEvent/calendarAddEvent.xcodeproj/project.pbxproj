@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB5F5B0E2450B4D7009B18D6 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F5B0D2450B4D7009B18D6 /* ReminderCell.swift */; };
 		CB7672A424429F5600E550E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672A324429F5600E550E5 /* AppDelegate.swift */; };
 		CB7672A624429F5600E550E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672A524429F5600E550E5 /* SceneDelegate.swift */; };
 		CB7672A824429F5600E550E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672A724429F5600E550E5 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		CB7672AD24429F5D00E550E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7672AC24429F5D00E550E5 /* Assets.xcassets */; };
 		CB7672B024429F5D00E550E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7672AE24429F5D00E550E5 /* LaunchScreen.storyboard */; };
 		CB7672BB24429F5D00E550E5 /* calendarAddEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7672BA24429F5D00E550E5 /* calendarAddEventTests.swift */; };
+		CBB7A9492448DD74004E168E /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7A9482448DD74004E168E /* RemindersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB5F5B0D2450B4D7009B18D6 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
 		CB7672A024429F5600E550E5 /* calendarAddEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendarAddEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7672A324429F5600E550E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7672A524429F5600E550E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		CB7672B624429F5D00E550E5 /* calendarAddEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calendarAddEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7672BA24429F5D00E550E5 /* calendarAddEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarAddEventTests.swift; sourceTree = "<group>"; };
 		CB7672BC24429F5D00E550E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB7A9482448DD74004E168E /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,6 @@
 			children = (
 				CB7672A224429F5600E550E5 /* calendarAddEvent */,
 				CB7672B924429F5D00E550E5 /* calendarAddEventTests */,
-				CB7672A124429F5600E550E5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,14 +77,17 @@
 				CB7672B624429F5D00E550E5 /* calendarAddEventTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CB7672A224429F5600E550E5 /* calendarAddEvent */ = {
 			isa = PBXGroup;
 			children = (
+				CB82F8C72446C7D0004858D9 /* Controller */,
+				CB82F8C62446C7C9004858D9 /* View */,
+				CB82F8C52446C7BA004858D9 /* Model */,
 				CB7672A324429F5600E550E5 /* AppDelegate.swift */,
 				CB7672A524429F5600E550E5 /* SceneDelegate.swift */,
-				CB7672A724429F5600E550E5 /* ViewController.swift */,
 				CB7672A924429F5600E550E5 /* Main.storyboard */,
 				CB7672AC24429F5D00E550E5 /* Assets.xcassets */,
 				CB7672AE24429F5D00E550E5 /* LaunchScreen.storyboard */,
@@ -94,9 +100,34 @@
 			isa = PBXGroup;
 			children = (
 				CB7672BA24429F5D00E550E5 /* calendarAddEventTests.swift */,
+				CB7672A124429F5600E550E5 /* Products */,
 				CB7672BC24429F5D00E550E5 /* Info.plist */,
 			);
 			path = calendarAddEventTests;
+			sourceTree = "<group>";
+		};
+		CB82F8C52446C7BA004858D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB82F8C62446C7C9004858D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB5F5B0D2450B4D7009B18D6 /* ReminderCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB82F8C72446C7D0004858D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB7672A724429F5600E550E5 /* ViewController.swift */,
+				CBB7A9482448DD74004E168E /* RemindersViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5F5B0E2450B4D7009B18D6 /* ReminderCell.swift in Sources */,
+				CBB7A9492448DD74004E168E /* RemindersViewController.swift in Sources */,
 				CB7672A824429F5600E550E5 /* ViewController.swift in Sources */,
 				CB7672A424429F5600E550E5 /* AppDelegate.swift in Sources */,
 				CB7672A624429F5600E550E5 /* SceneDelegate.swift in Sources */,
