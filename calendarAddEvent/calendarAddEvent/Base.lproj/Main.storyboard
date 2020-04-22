@@ -54,7 +54,7 @@
                                 </constraints>
                             </stackView>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="60" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEy-rz-QdE">
-                                <rect key="frame" x="50" y="437" width="314" height="216"/>
+                                <rect key="frame" x="50" y="416.5" width="314" height="0.0"/>
                                 <connections>
                                     <action selector="durationChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="aGN-dQ-xW5"/>
                                 </connections>
@@ -77,7 +77,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-i1-QYk">
-                                <rect key="frame" x="172" y="408" width="70" height="20.5"/>
+                                <rect key="frame" x="172" y="408" width="70" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Si2-iL-tFE"/>
                                 </constraints>
@@ -187,6 +187,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iJj-pE-2Qm" id="CaJ-52-scG"/>
+                                    <outlet property="delegate" destination="iJj-pE-2Qm" id="I0f-iz-olz"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54p-EN-8e1">
                                 <rect key="frame" x="20" y="122" width="374" height="33.5"/>
@@ -210,7 +214,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8m0-bd-91l"/>
                     <connections>
-                        <outlet property="remindersTable" destination="nCg-MC-M9H" id="IcT-h2-xyO"/>
+                        <outlet property="remindersTable" destination="nCg-MC-M9H" id="dbz-96-snJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jym-uN-Unz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

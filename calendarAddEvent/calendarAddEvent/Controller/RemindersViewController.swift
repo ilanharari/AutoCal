@@ -12,8 +12,8 @@ import EventKitUI
 
 class RemindersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+ 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                     //length of Reminders array
                      return self.myReminders.count
                  }
 
@@ -23,7 +23,6 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
                  }
     
-@IBOutlet weak var remindersTable: UITableView!
     
   var remindersStore = EKEventStore() //instantiating database
   var myReminders: [EKReminder] = []
@@ -32,30 +31,18 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
     func pullReminders(store: EKEventStore) {
       remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
       //initialize myReminders[] with reminders
-        self.myReminders = reminders! //does this work?
-        
-        //populate UI here
-            //meaning, put the delegates here
-//        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//            //length of Reminders array
-//            return self.myReminders.count
-//        }
-//
-//        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {//this function provides the prototype
-//
-//        }
-        self.remindersTable.delegate = self
-        self.remindersTable.dataSource = self //FIXME: data source needs to be event store
+        self.myReminders = reminders!
                      }//end closure
                  )
         
     } //end func pullReminders()
-    
+       @IBOutlet weak var remindersTable: UITableView!
     override func viewDidLoad() {
     super.viewDidLoad()
-       
-        self.remindersStore = EKEventStore()
-      
+    self.remindersStore = EKEventStore()
+    remindersTable.delegate = self //Unexpectedly found nil while implicitly unwrapping an Optional value
+        //NOTE: remindersTable is nil
+    remindersTable.dataSource = self
         
         switch EKEventStore.authorizationStatus(for: .reminder) {
                 case .notDetermined:
