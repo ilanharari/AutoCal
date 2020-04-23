@@ -91,8 +91,7 @@ class ViewController: UIViewController {
             print("case default")
             } //end switch
         //this is where switching screen goes
-        navigationController?.pushViewController(RemindersViewController(), animated: true)
-        
+        self.performSegue(withIdentifier: "toRemindersList", sender: self)
         
         
     }//end doneClicked
