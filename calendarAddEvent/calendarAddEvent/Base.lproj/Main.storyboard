@@ -197,7 +197,6 @@
                     <navigationItem key="navigationItem" id="8m0-bd-91l"/>
                     <connections>
                         <outlet property="remindersTable" destination="nCg-MC-M9H" id="jbZ-T0-fHX"/>
-                        <outlet property="table" destination="nCg-MC-M9H" id="Tff-MG-FZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jym-uN-Unz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
