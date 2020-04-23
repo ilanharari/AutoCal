@@ -10,15 +10,29 @@ import UIKit
 
 class SchedulerViewController: UIViewController {
 
+    @IBOutlet weak var lowPriority: PriorityMenuButton!
+    
+    @IBOutlet weak var mediumPriority: PriorityMenuButton!
+    
+    @IBOutlet weak var highPriority: PriorityMenuButton!
+    
     @IBOutlet weak var priorityMenu: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+    } //end viewDidLoad()
     
     /*
-    // MARK: - Navigation
+   
+     
+     
+     
+     
+     
+     
+     
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
