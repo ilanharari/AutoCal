@@ -36,7 +36,9 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
                  )
         
     } //end func pullReminders()
-       @IBOutlet weak var remindersTable: UITableView!
+    @IBOutlet weak var remindersTable: UITableView!
+    @IBOutlet weak var table: UITableView!
+    
     override func viewDidLoad() {
     super.viewDidLoad()
     self.remindersStore = EKEventStore()

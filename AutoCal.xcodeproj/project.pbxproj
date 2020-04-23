@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBBBBB0A24511A2500AF6BE2 /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBBBB0924511A2500AF6BE2 /* SchedulerViewController.swift */; };
+		CBCA2EAE2451E0AB008C3FCC /* PriorityMenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButtons.swift */; };
 		CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */; };
 		CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */; };
 		CBE6832F243BE3EC0051ED79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832E243BE3EC0051ED79 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		CBA6E2AF243FD6F1008B0C1C /* EventKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EventKitPlayground.playground; path = ../../EventKitPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CBBBBB0924511A2500AF6BE2 /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
+		CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityMenuButtons.swift; sourceTree = "<group>"; };
 		CBE68327243BE3EC0051ED79 /* AutoCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		CBA6E2B1243FDB5E008B0C1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButtons.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CBE6832E243BE3EC0051ED79 /* ViewController.swift */,
+				CBBBBB0924511A2500AF6BE2 /* SchedulerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +234,8 @@
 			files = (
 				CBE6832F243BE3EC0051ED79 /* ViewController.swift in Sources */,
 				CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */,
+				CBBBBB0A24511A2500AF6BE2 /* SchedulerViewController.swift in Sources */,
+				CBCA2EAE2451E0AB008C3FCC /* PriorityMenuButtons.swift in Sources */,
 				CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
