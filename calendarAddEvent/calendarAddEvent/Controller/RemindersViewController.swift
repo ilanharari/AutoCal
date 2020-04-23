@@ -14,7 +14,8 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
     
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-                     return self.myReminders.count
+        print(self.myReminders.count)
+        return self.myReminders.count
                  }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {//this function provides the prototype
