@@ -15,25 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let eventStore = EKEventStore()
-        
-        
-        
-        
-//        switch EKEventStore.authorizationStatus(for: .event) {
-//        case .authorized:
-//            init(eventStore: eventStore)
-//        case .denied:
-//            print("Access denied")
-//
-//        case .notDetermined:
-//            <#code#>
-//        case .restricted:
-//            <#code#>
-//        @unknown default:
-//            <#code#>
-//        }
-        
+       
         
         
         
