@@ -33,6 +33,7 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
       remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
       //initialize myReminders[] with reminders
         self.myReminders = reminders!
+       
                      }//end closure
                  )
         
@@ -41,9 +42,7 @@ class RemindersViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
     super.viewDidLoad()
     self.remindersStore = EKEventStore()
-    remindersTable.delegate = self //Unexpectedly found nil while implicitly unwrapping an Optional value
-        //NOTE: remindersTable is nil
-    remindersTable.dataSource = self
+    
         
         switch EKEventStore.authorizationStatus(for: .reminder) {
                 case .notDetermined:

@@ -93,7 +93,6 @@ class ViewController: UIViewController {
         //this is where switching screen goes
         self.performSegue(withIdentifier: "toRemindersList", sender: self)
         
-        
     }//end doneClicked
 }
 

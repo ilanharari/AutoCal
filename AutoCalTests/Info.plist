@@ -18,5 +18,11 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>RequestsOpenAccess</key>
+	<string>Yes</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>This app needs access to your reminders</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>AutoCal needs access to your calendars in order to insert to-do list items.</string>
 </dict>
 </plist>

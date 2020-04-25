@@ -138,7 +138,7 @@
                                                                 <constraint firstAttribute="width" constant="66" id="6Bk-2S-wfO"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reminder.name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-gC-Cdu">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-gC-Cdu">
                                                             <rect key="frame" x="76" y="0.0" width="214.5" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="214.5" id="sgS-6s-zIh"/>
@@ -147,24 +147,24 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-qU-Lxq">
-                                                            <rect key="frame" x="300.5" y="0.0" width="33.5" height="38"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h9x-dV-gPH">
+                                                            <rect key="frame" x="300.5" y="0.5" width="33.5" height="37"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="ovh-qU-Lxq" firstAttribute="leading" secondItem="Xfm-gC-Cdu" secondAttribute="trailing" constant="10" id="3f3-QD-Eo1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="h9x-dV-gPH" secondAttribute="trailing" id="2ie-xS-SLw"/>
                                                         <constraint firstItem="Xfm-gC-Cdu" firstAttribute="top" secondItem="WBP-JU-DmN" secondAttribute="top" id="6VZ-bU-3lT"/>
-                                                        <constraint firstAttribute="trailing" secondItem="ovh-qU-Lxq" secondAttribute="trailing" id="LGc-Hx-QL1"/>
+                                                        <constraint firstItem="h9x-dV-gPH" firstAttribute="top" secondItem="WBP-JU-DmN" secondAttribute="top" id="88s-n9-zIV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="h9x-dV-gPH" secondAttribute="bottom" id="8GY-Za-k5R"/>
                                                         <constraint firstAttribute="bottom" secondItem="NmH-0F-uVf" secondAttribute="bottom" id="PO0-zc-7Cn"/>
                                                         <constraint firstItem="NmH-0F-uVf" firstAttribute="top" secondItem="WBP-JU-DmN" secondAttribute="top" id="Pz4-IN-WJU"/>
-                                                        <constraint firstItem="Xfm-gC-Cdu" firstAttribute="leading" secondItem="NmH-0F-uVf" secondAttribute="trailing" constant="10" id="Qu4-ew-4tx"/>
-                                                        <constraint firstAttribute="bottom" secondItem="ovh-qU-Lxq" secondAttribute="bottom" id="YRX-kf-FIx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NmH-0F-uVf" secondAttribute="bottom" id="TsW-af-pJG"/>
+                                                        <constraint firstItem="Xfm-gC-Cdu" firstAttribute="leading" secondItem="WBP-JU-DmN" secondAttribute="leading" constant="76" id="Y49-4b-EhQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xfm-gC-Cdu" secondAttribute="trailing" constant="43.5" id="cke-EN-vQS"/>
+                                                        <constraint firstItem="NmH-0F-uVf" firstAttribute="top" secondItem="WBP-JU-DmN" secondAttribute="top" id="gaL-qE-Nv4"/>
+                                                        <constraint firstItem="NmH-0F-uVf" firstAttribute="leading" secondItem="WBP-JU-DmN" secondAttribute="leading" id="mtF-IR-SjM"/>
                                                         <constraint firstAttribute="bottom" secondItem="Xfm-gC-Cdu" secondAttribute="bottom" id="pKv-hG-amp"/>
                                                         <constraint firstItem="NmH-0F-uVf" firstAttribute="leading" secondItem="WBP-JU-DmN" secondAttribute="leading" id="w2c-uf-YW8"/>
-                                                        <constraint firstItem="ovh-qU-Lxq" firstAttribute="top" secondItem="WBP-JU-DmN" secondAttribute="top" id="zOy-pm-XGb"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
@@ -178,7 +178,6 @@
                                         <connections>
                                             <outlet property="reminderCheck" destination="NmH-0F-uVf" id="0wi-AT-TcW"/>
                                             <outlet property="reminderNameLbl" destination="Xfm-gC-Cdu" id="v6s-69-P6e"/>
-                                            <outlet property="reminderTimeLbl" destination="ovh-qU-Lxq" id="JJY-hf-ZsF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -230,5 +229,6 @@
     </scenes>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

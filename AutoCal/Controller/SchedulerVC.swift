@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SchedulerViewController: UIViewController {
+class SchedulerVC: UIViewController {
 
     @IBOutlet weak var lowPriority: PriorityMenuButton!
     
