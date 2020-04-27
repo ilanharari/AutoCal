@@ -50,6 +50,10 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
                    self.remindersArray = reminders!//FIXME
                 print(self.remindersArray)
+                DispatchQueue.main.async {
+                self.scheduledTable.reloadData()
+                }
+               
             })
         @unknown default:
         print("Default")
