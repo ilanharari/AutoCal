@@ -12,7 +12,7 @@ import EventKitUI
 
 class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return remindersArray.count
+        return self.remindersArray.count //count = 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -27,15 +27,11 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     var remindersArray: [EKReminder] = []
     let remindersStore = EKEventStore()
     
-    
     override func viewDidLoad() {
         //MARK: View Constructor
         super.viewDidLoad()
-        self.scheduledTable.dataSource = self
-                       self.scheduledTable.delegate = self
         self.remindersLoading.isHidden = false
         switch EKEventStore.authorizationStatus(for: .reminder) {
-            
         case .notDetermined:
             self.remindersStore.requestAccess(to: .reminder, completion: {(granted: Bool, error: Error?) -> Void in
                 if granted {
@@ -51,27 +47,14 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             print("Access denied")
         case .authorized:
             print("Access to reminders is authorized")
-            remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil), completion:
-                {(reminders: [EKReminder]?) -> Void in
-              self.remindersArray = reminders!
-              DispatchQueue.main.async {
-                self.scheduledTable.isHidden = false
-                self.remindersLoading.isHidden = true
-            }
-                   }//end completion handler
-                       )//end fetchReminders()
+            remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
+                   self.remindersArray = reminders!//FIXME
+                print(self.remindersArray)
+            })
         @unknown default:
         print("Default")
         } //end switch
-        
-       
-            
+        self.scheduledTable.dataSource = self
+        self.scheduledTable.delegate = self
         } //end viewDidLoad()
 }//end class
-
-
-
-//load in reminders while activity indicator is showing,
-//hide activity indicator in completion handler for pullReminders()
-
-
