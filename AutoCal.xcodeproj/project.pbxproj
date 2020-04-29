@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB1ACA32458FB8A00E95137 /* ReminderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */; };
 		CBBBBB0A24511A2500AF6BE2 /* SchedulerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBBBB0924511A2500AF6BE2 /* SchedulerVC.swift */; };
 		CBCA2EAE2451E0AB008C3FCC /* PriorityMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButton.swift */; };
 		CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		CBA6E2AF243FD6F1008B0C1C /* EventKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EventKitPlayground.playground; path = ../../EventKitPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderLabel.swift; sourceTree = "<group>"; };
 		CBBBBB0924511A2500AF6BE2 /* SchedulerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerVC.swift; sourceTree = "<group>"; };
 		CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityMenuButton.swift; sourceTree = "<group>"; };
 		CBE68327243BE3EC0051ED79 /* AutoCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButton.swift */,
+				CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */,
 				CBBBBB0A24511A2500AF6BE2 /* SchedulerVC.swift in Sources */,
 				CBCA2EAE2451E0AB008C3FCC /* PriorityMenuButton.swift in Sources */,
+				CBB1ACA32458FB8A00E95137 /* ReminderLabel.swift in Sources */,
 				CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

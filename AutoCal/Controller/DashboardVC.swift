@@ -11,14 +11,21 @@ import EventKit
 import EventKitUI
 
 class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var reminderSelected : EKReminder!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.remindersArray.count //count = 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = scheduledTable.dequeueReusableCell(withIdentifier: "reminderCell")!
+        cell.textLabel?.textColor = .white
+        cell.textLabel?.textAlignment = .center
         cell.textLabel?.text = remindersArray[indexPath.item].title
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        reminderSelected = remindersArray[indexPath.row]
     }
     
     @IBOutlet weak var scheduledTable: UITableView!
@@ -49,9 +56,10 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             print("Access to reminders is authorized")
             remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
                    self.remindersArray = reminders!//FIXME
-                print(self.remindersArray)
+               
                 DispatchQueue.main.async {
                 self.scheduledTable.reloadData()
+                    self.remindersLoading.isHidden = true
                 }
                
             })
@@ -61,4 +69,16 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         self.scheduledTable.dataSource = self
         self.scheduledTable.delegate = self
         } //end viewDidLoad()
+ 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let schedulerVC = segue.destination as? SchedulerVC {
+            schedulerVC.reminder = reminderSelected //reminderSelected is nil
+        }
+    }
+    @IBAction func didTapInfo(_ sender: Any) {
+        
+        reminderSelected = remindersArray[scheduledTable.indexPathForSelectedRow?.row ?? 0]
+    }
+    
 }//end class

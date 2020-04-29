@@ -7,9 +7,15 @@
 //
 
 import UIKit
-
+import EventKit
+import EventKitUI
 class SchedulerVC: UIViewController {
-
+    
+    var reminder: EKReminder!
+    
+    @IBOutlet weak var expensePicker: UIDatePicker!
+    
+    @IBOutlet weak var PlannerView: UILabel!
     @IBOutlet weak var lowPriority: PriorityMenuButton!
     
     @IBOutlet weak var mediumPriority: PriorityMenuButton!
@@ -20,7 +26,7 @@ class SchedulerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        PlannerView.text = reminder.title
     } //end viewDidLoad()
     
     /*
