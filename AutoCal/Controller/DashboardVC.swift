@@ -52,6 +52,11 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             print("Access restricted")
         case .denied:
             print("Access denied")
+            let alert = UIAlertController(title: "Access Denied", message: "Oops! It seems we've lost access to your Reminders. You can change this in Settings -> Privacy -> Reminders -> AutoCal", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
         case .authorized:
             print("Access to reminders is authorized")
             remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in

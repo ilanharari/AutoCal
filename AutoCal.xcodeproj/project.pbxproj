@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CBB1ACA32458FB8A00E95137 /* ReminderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */; };
 		CBBBBB0A24511A2500AF6BE2 /* SchedulerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBBBB0924511A2500AF6BE2 /* SchedulerVC.swift */; };
-		CBCA2EAE2451E0AB008C3FCC /* PriorityMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButton.swift */; };
+		CBBED48F245B915400565CFF /* fetchRemindersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBED48E245B915400565CFF /* fetchRemindersTest.swift */; };
 		CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */; };
 		CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */; };
 		CBE6832F243BE3EC0051ED79 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6832E243BE3EC0051ED79 /* DashboardVC.swift */; };
@@ -33,7 +33,7 @@
 		CBA6E2AF243FD6F1008B0C1C /* EventKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EventKitPlayground.playground; path = ../../EventKitPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderLabel.swift; sourceTree = "<group>"; };
 		CBBBBB0924511A2500AF6BE2 /* SchedulerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerVC.swift; sourceTree = "<group>"; };
-		CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityMenuButton.swift; sourceTree = "<group>"; };
+		CBBED48E245B915400565CFF /* fetchRemindersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchRemindersTest.swift; sourceTree = "<group>"; };
 		CBE68327243BE3EC0051ED79 /* AutoCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE6832A243BE3EC0051ED79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE6832C243BE3EC0051ED79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +75,6 @@
 		CBA6E2B1243FDB5E008B0C1C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CBCA2EAD2451E0AB008C3FCC /* PriorityMenuButton.swift */,
 				CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */,
 			);
 			path = View;
@@ -130,6 +129,7 @@
 			children = (
 				CBE68341243BE3EE0051ED79 /* AutoCalTests.swift */,
 				CBE68343243BE3EE0051ED79 /* Info.plist */,
+				CBBED48E245B915400565CFF /* fetchRemindersTest.swift */,
 			);
 			path = AutoCalTests;
 			sourceTree = "<group>";
@@ -238,7 +238,6 @@
 				CBE6832F243BE3EC0051ED79 /* DashboardVC.swift in Sources */,
 				CBE6832B243BE3EC0051ED79 /* AppDelegate.swift in Sources */,
 				CBBBBB0A24511A2500AF6BE2 /* SchedulerVC.swift in Sources */,
-				CBCA2EAE2451E0AB008C3FCC /* PriorityMenuButton.swift in Sources */,
 				CBB1ACA32458FB8A00E95137 /* ReminderLabel.swift in Sources */,
 				CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */,
 			);
@@ -248,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBED48F245B915400565CFF /* fetchRemindersTest.swift in Sources */,
 				CBE68342243BE3EE0051ED79 /* AutoCalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
