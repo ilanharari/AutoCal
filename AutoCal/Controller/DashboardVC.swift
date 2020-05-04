@@ -13,7 +13,7 @@ import EventKitUI
 class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var reminderSelected : EKReminder!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.remindersArray.count //count = 0
+        return self.remindersArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,7 +42,7 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         case .notDetermined:
             self.remindersStore.requestAccess(to: .reminder, completion: {(granted: Bool, error: Error?) -> Void in
                 if granted {
-                print("Access granted")
+                    print("Access granted")
                 }
                 else {
                     print("Access denied")
@@ -54,31 +54,31 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             print("Access denied")
             let alert = UIAlertController(title: "Access Denied", message: "Oops! It seems we've lost access to your Reminders. You can change this in Settings -> Privacy -> Reminders -> AutoCal", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         case .authorized:
             print("Access to reminders is authorized")
             remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
-                   self.remindersArray = reminders!//FIXME
-               
+                self.remindersArray = reminders!//FIXME
+                
                 DispatchQueue.main.async {
-                self.scheduledTable.reloadData()
+                    self.scheduledTable.reloadData()
                     self.remindersLoading.isHidden = true
                 }
-               
+                
             })
         @unknown default:
-        print("Default")
+            print("Default")
         } //end switch
         self.scheduledTable.dataSource = self
         self.scheduledTable.delegate = self
-        } //end viewDidLoad()
- 
+    } //end viewDidLoad()
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let schedulerVC = segue.destination as? SchedulerVC {
-            schedulerVC.reminder = reminderSelected //reminderSelected is nil
+            schedulerVC.reminder = reminderSelected
         }
     }
     @IBAction func didTapInfo(_ sender: Any) {

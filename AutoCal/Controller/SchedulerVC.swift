@@ -98,7 +98,8 @@ class SchedulerVC: UIViewController {
         
         //third: starting with the first event that has a start date greater than the current time, compare each event's end date with the next event's start date. If two events start at the same time, use the longer one. Store the interval between these two times.
         
-        //fourth: Compare the stored interval with the one in the DatePicker. Determine whether the stored one from the search is greater than or equal to the one in the DatePicker.
+        //fourth: Compare the stored interval with the one in the DatePicker. Determine whether the stored
+        //one from the search is greater than or equal to the one in the DatePicker.
             
             
         //Fifth: create an event starting five minutes after the first event has ended and for the duration specified by the DatePicker.
