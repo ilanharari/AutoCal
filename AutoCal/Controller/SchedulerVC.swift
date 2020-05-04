@@ -94,7 +94,7 @@ class SchedulerVC: UIViewController {
 //
 //
         
-        //second: put all events into an array
+       
         
         //third: starting with the first event that has a start date greater than the current time, compare each event's end date with the next event's start date. If two events start at the same time, use the longer one. Store the interval between these two times.
         
