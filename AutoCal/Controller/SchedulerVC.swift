@@ -9,6 +9,7 @@
 import UIKit
 import EventKit
 import EventKitUI
+
 class SchedulerVC: UIViewController {
     var eventStore = EKEventStore()
     var reminder: EKReminder!
@@ -20,6 +21,7 @@ class SchedulerVC: UIViewController {
     //MARK: ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         PlannerView.text = reminder.title
         
         switch EKEventStore .authorizationStatus(for: .event) {
@@ -62,11 +64,72 @@ class SchedulerVC: UIViewController {
                        }
 
    //MARK: event scheduler function
-    func scheduleEvent(eventDuration: TimeInterval, userCalendar: EKEventStore) {
-        //this function finds the FIRST possible window for a task with the given timeInterval can fit.
-   
-        //First, pull all events for the next 7 days.
     
+    
+    func getEvents(eventStore: EKEventStore) -> [EKEvent] { //fetch and sort events
+        //Note: Retrieving events from the Calendar database does not necessarily return events in
+        //chronological order.To sort an array of EKEvent objects by date, call
+        //sortedArrayUsingSelector: on the array, providing the selector
+        //for the compareStartDateWithEvent: method.
+        
+        let calendars = self.eventStore.calendars(for: .event)
+        //let week = Date.init(timeIntervalSinceNow: 3600 * 24 * 7)
+        guard let startDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) else {return []}
+        guard let endDate = Calendar.current.date(byAdding: .day, value: 7, to: startDate) else {return []}
+        
+        var events: [EKEvent] = []
+        
+        for _ in calendars {
+            var predicate: NSPredicate
+            predicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: nil)
+            //sort events in chronological order
+            let  matchingEvents = eventStore.events(matching: predicate).sorted(by: { (e1: EKEvent, e2: EKEvent) -> Bool in
+                return e1.compareStartDate(with: e2) == .orderedAscending
+                //case: events with the same start date will be ordered by shorter event first
+                //case: Overlapping events
+            })
+            events.append(contentsOf: matchingEvents)
+            
+        }
+        return events
+    }
+    
+    
+}
+    //func findGap(eventList: [EKE) -> Date
+func findFreetime(events: [EKEvent], expectedDuration: TimeInterval) throws -> (startTime: Date, duration: TimeInterval) {
+   //third: starting with the first event that has a start date greater than the current time, compare each event's end date with the next event's start date. If two events start at the same time, use the longer one. Store the interval between these two times.
+   
+   //fourth: Compare the stored interval with the one in the DatePicker. Determine whether the stored
+   //one from the search is greater than or equal to the one in the DatePicker.
+       
+       
+   //Fifth: create an event starting five minutes after the first event has ended and for the duration specified by the DatePicker.
+   
+   //Note: The user should have a setting in the app to control the "break time" they have between events
+  
+    
+        for i in 0...events.count - 2 {
+            if events[i].endDate < events[i + 1].startDate {
+                let gap : TimeInterval = events[i].endDate.timeIntervalSince(events[i+1].startDate)
+                if (gap >= expectedDuration) {
+                    return (events[i].endDate, gap)
+            }
+        }
+    }
+    throw NSError()
+
+}
+
+    func scheduleEvent(eventDuration: TimeInterval, userCalendar: EKEventStore) {
+        //create an event with the following criteria:
+        //event.title = self.reminder.title
+        //event.startDate =
+    
+   
+
+        //this function finds the FIRST possible window for a task with the given timeInterval can fit.
+       
         
         // Get the appropriate calendar.
 //        var calendar = Calendar.current
@@ -96,19 +159,12 @@ class SchedulerVC: UIViewController {
         
        
         
-        //third: starting with the first event that has a start date greater than the current time, compare each event's end date with the next event's start date. If two events start at the same time, use the longer one. Store the interval between these two times.
         
-        //fourth: Compare the stored interval with the one in the DatePicker. Determine whether the stored
-        //one from the search is greater than or equal to the one in the DatePicker.
-            
-            
-        //Fifth: create an event starting five minutes after the first event has ended and for the duration specified by the DatePicker.
-        
-        //Note: The user should have a setting in the app to control the "break time" they have between events
         
     
         
     }
     
 
-}
+
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0DCEB524620BC3001C9F04 /* ExpensePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0DCEB424620BC3001C9F04 /* ExpensePickerView.swift */; };
 		CBB1ACA32458FB8A00E95137 /* ReminderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */; };
 		CBBBBB0A24511A2500AF6BE2 /* SchedulerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBBBB0924511A2500AF6BE2 /* SchedulerVC.swift */; };
 		CBBED48F245B915400565CFF /* fetchRemindersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBED48E245B915400565CFF /* fetchRemindersTest.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0DCEB424620BC3001C9F04 /* ExpensePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensePickerView.swift; sourceTree = "<group>"; };
 		CBA6E2AF243FD6F1008B0C1C /* EventKitPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = EventKitPlayground.playground; path = ../../EventKitPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderLabel.swift; sourceTree = "<group>"; };
 		CBBBBB0924511A2500AF6BE2 /* SchedulerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerVC.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				CBB1ACA22458FB8A00E95137 /* ReminderLabel.swift */,
+				CB0DCEB424620BC3001C9F04 /* ExpensePickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				CBBBBB0A24511A2500AF6BE2 /* SchedulerVC.swift in Sources */,
 				CBB1ACA32458FB8A00E95137 /* ReminderLabel.swift in Sources */,
 				CBE6832D243BE3EC0051ED79 /* SceneDelegate.swift in Sources */,
+				CB0DCEB524620BC3001C9F04 /* ExpensePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
