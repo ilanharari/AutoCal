@@ -13,7 +13,9 @@ import EventKitUI
 class SchedulerVC: UIViewController {
     var eventStore = EKEventStore()
     var reminder: EKReminder!
-    
+    var userEvents: [EKEvent] = []
+    var schedule: [TimeInterval: Bool] = [:]
+    var freeTime: [DateInterval] = []
     @IBOutlet weak var expensePicker: UIDatePicker!
     @IBOutlet weak var PlannerView: UILabel!
     
@@ -30,8 +32,9 @@ class SchedulerVC: UIViewController {
                print("access to event store undetermined. Trying again now...")
                eventStore.requestAccess(to: .event, completion: {(granted: Bool, error: Error?) -> Void in
                    if granted {
-                      print("access granted")
-                    //call scheduleEvent()
+                    print("access granted")
+                    self.userEvents = self.getEvents(eventStore: self.eventStore)
+                    
                    } else {
                        self.accessAlert()
                    }})
@@ -41,8 +44,19 @@ class SchedulerVC: UIViewController {
                self.accessAlert()
            case .authorized:
                print("access authorized")
-            //call scheduleEvent()
-               
+               self.userEvents = self.getEvents(eventStore: self.eventStore)
+             
+               for i in 0...self.userEvents.count - 2 {
+              
+               if self.userEvents[i].endDate >= self.userEvents[i + 1].startDate {
+                    continue
+                }
+                let betweenEvents = DateInterval(start: self.userEvents[i].endDate!, end: self.userEvents[i+1].startDate!)
+                print(self.userEvents[i].endDate!)
+                print(betweenEvents)
+                print(self.userEvents[i + 1].startDate!)
+                    self.freeTime.append(betweenEvents)
+            }
            @unknown default:
                print("@unknown default")
            }
@@ -75,24 +89,23 @@ class SchedulerVC: UIViewController {
         let calendars = self.eventStore.calendars(for: .event)
         //let week = Date.init(timeIntervalSinceNow: 3600 * 24 * 7)
         guard let startDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) else {return []}
-        guard let endDate = Calendar.current.date(byAdding: .day, value: 7, to: startDate) else {return []}
+        guard let endDate = Calendar.current.date(byAdding: .day, value: 9, to: startDate) else {return []}
         
         var events: [EKEvent] = []
-        
-        for _ in calendars {
-            var predicate: NSPredicate
+        var predicate: NSPredicate
             predicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: nil)
             //sort events in chronological order
             let  matchingEvents = eventStore.events(matching: predicate).sorted(by: { (e1: EKEvent, e2: EKEvent) -> Bool in
                 return e1.compareStartDate(with: e2) == .orderedAscending
-                //case: events with the same start date will be ordered by shorter event first
+                //case: events with the same start date will be ordered by longer event first
                 //case: Overlapping events
+                //assign e1 a date interval to go
+                
             })
             events.append(contentsOf: matchingEvents)
-            
-        }
+        
         return events
-    }
+    } //end fetch func
     
     
 }

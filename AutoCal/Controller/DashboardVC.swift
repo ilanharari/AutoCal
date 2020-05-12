@@ -79,8 +79,7 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let schedulerVC = segue.destination as? SchedulerVC {
-           
-            schedulerVC.reminder = reminderSelected
+                schedulerVC.reminder = reminderSelected
         }
     }
     
