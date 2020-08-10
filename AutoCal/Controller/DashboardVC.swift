@@ -12,9 +12,11 @@ import EventKitUI
 
 class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var reminderSelected : EKReminder!
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.remindersArray.count
     }
+ 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = scheduledTable.dequeueReusableCell(withIdentifier: "reminderCell")!
@@ -23,11 +25,6 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         cell.textLabel?.text = remindersArray[indexPath.item].title
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        reminderSelected = remindersArray[indexPath.row]
-    }
-    
     @IBOutlet weak var scheduledTable: UITableView!
     @IBOutlet weak var remindersLoading: UIActivityIndicatorView!
     
@@ -37,6 +34,8 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     override func viewDidLoad() {
         //MARK: View Constructor
         super.viewDidLoad()
+        scheduledTable.dataSource = self
+        scheduledTable.delegate = self
         self.remindersLoading.isHidden = false
         switch EKEventStore.authorizationStatus(for: .reminder) {
         case .notDetermined:
@@ -58,7 +57,7 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             }))
             self.present(alert, animated: true, completion: nil)
         case .authorized:
-            print("Access to reminders is authorized")
+            //print("Access to reminders is authorized")
             remindersStore.fetchReminders(matching: remindersStore.predicateForReminders(in: nil),  completion: { (reminders: [EKReminder]?) -> Void in
                 self.remindersArray = reminders!//FIXME
                 
@@ -71,19 +70,18 @@ class DashboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         @unknown default:
             print("Default")
         } //end switch
-        self.scheduledTable.dataSource = self
-        self.scheduledTable.delegate = self
     } //end viewDidLoad()
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           reminderSelected = remindersArray[indexPath.row]
+           performSegue(withIdentifier: "toScheduler", sender: self)
+       }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let schedulerVC = segue.destination as? SchedulerVC {
-            schedulerVC.reminder = reminderSelected
+                schedulerVC.reminder = reminderSelected
         }
     }
-    @IBAction func didTapInfo(_ sender: Any) {
-        
-        reminderSelected = remindersArray[scheduledTable.indexPathForSelectedRow?.row ?? 0]
-    }
+    
     
 }//end class
